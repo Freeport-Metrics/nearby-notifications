@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeaconSimulator</string>
+    <string name="advertising">Advertising&#8230;</string>
+    <string name="start_advertising">Advertise</string>
+</resources>
