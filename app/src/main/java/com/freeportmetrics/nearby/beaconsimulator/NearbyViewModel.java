@@ -1,12 +1,13 @@
 package com.freeportmetrics.nearby.beaconsimulator;
 
+import android.databinding.BaseObservable;
 import android.support.annotation.NonNull;
 
 /**
  * Created by skamycki on 02/10/2017.
  */
 
-public class NearbyViewModel {
+public class NearbyViewModel extends BaseObservable {
 
     private String url;
 
@@ -30,5 +31,6 @@ public class NearbyViewModel {
 
     public void setAdvertising(boolean advertising) {
         this.advertising = advertising;
+        notifyChange();
     }
 }

@@ -10,7 +10,7 @@
 
         <variable
             name="ah"
-            type="com.freeportmetrics.nearby.beaconsimulator.NearbyActionHandler"/>
+            type="com.freeportmetrics.nearby.beaconsimulator.NearbyActionHandler" />
     </data>
 
     <LinearLayout
@@ -22,12 +22,12 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@={vm.url}"
-            android:onClick="@{() -> vm.advertising ? ah.stopAdvertising() : ah.startAdvertising()}"/>
+            android:text="@={vm.url}" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{() -> ah.advertiseButtonClicked()}"
             android:text="@{vm.advertising ? @string/advertising : @string/start_advertising}" />
 
     </LinearLayout>

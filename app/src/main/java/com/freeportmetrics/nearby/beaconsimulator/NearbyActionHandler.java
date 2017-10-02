@@ -6,7 +6,5 @@ package com.freeportmetrics.nearby.beaconsimulator;
 
 public interface NearbyActionHandler {
 
-    void startAdvertising();
-
-    void stopAdvertising();
+    void advertiseButtonClicked();
 }
